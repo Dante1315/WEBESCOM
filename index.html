@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasatiempos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #666;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px auto;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+        }
+
+        h2 {
+            color: #333;
+            cursor: pointer;
+        }
+
+        .content {
+            display: none;
+        }
+
+        p {
+            color: #666;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Pasatiempos</h1>
+</header>
+
+<nav>
+    <a href="#lectura">Lectura</a>
+    <a href="#Videojuegos">Videojuegos</a>
+    <a href="#Musica">Musica</a>
+    <a href="#Peliculas">Peliculas</a>
+    <a href="#Series">Series</a>
+    <a href="#Podcast">Podcast</a>
+    <a href="#Batman">Batman</a>
+    <a href="#Star Wars">Star Wars</a>
+</nav>
+
+<section id="lectura">
+    <h2 onclick="toggleContent('lectura')">Lectura</h2>
+    <div class="content">
+        <div>
+            <h3>The Dark Knight Returns</h3>
+            <img src="bats.jpeg" alt="Imagen de The Dark Knight Returns">
+            <p>"The Dark Knight Returns" es una obra maestra del cómic creada por Frank Miller. Ambientada en un futuro distópico, la historia sigue a un envejecido Bruce Wayne que regresa como Batman después de años de retiro. Enfrentándose a la corrupción y el crimen que han inundado Gotham, Batman se ve obligado a confrontar a viejos enemigos como el Joker y Two-Face. La narrativa oscura y compleja explora temas de envejecimiento, moralidad y la esencia misma del héroe." </p>
+        </div>
+        <div>
+            <h3>Darth Plagueis</h3>
+            <img src="dpla.jpeg" alt="Imagen de Darth Plagueis">
+            <p>"Darth Plagueis" es una novela escrita por James Luceno que explora el origen y la ascensión de Darth Sidious al poder como Emperador Palpatine. La historia se centra en la figura enigmática de Darth Plagueis, un Lord Sith obsesionado con manipular la Fuerza para controlar la vida y la muerte. A través de una trama llena de intrigas políticas y oscuros secretos, la novela revela los eventos que llevaron a la caída de la República y el ascenso del Imperio Galáctico, todo desde la perspectiva del lado oscuro de la Fuerza." </p>
+        </div>
+        <div>
+            <h3>Aftermath</h3>
+            <img src="af.jpeg" alt="Imagen de Aftermath">
+            <p>"Aftermath" es una novela de Chuck Wendig que se desarrolla después de los eventos de "El retorno del Jedi". La historia sigue los turbulentos acontecimientos que tienen lugar en la galaxia mientras la Rebelión celebra su victoria sobre el Imperio. Sin embargo, la guerra aún no ha terminado, y los remanentes del Imperio luchan desesperadamente por mantener su poder mientras la Nueva República intenta establecerse. Con una mezcla de nuevos personajes y caras conocidas, "Aftermath" ofrece una visión intrigante del período de transición entre dos eras en la galaxia de Star Wars." </p>
+        </div>
+    </div>
+</section>
+
+
+<script>
+    function toggleContent(sectionId) {
+        var content = document.getElementById(sectionId).getElementsByClassName('content')[0];
+        content.style.display = (content.style.display === 'none') ? 'block' : 'none';
+    }
+</script>
+
+</body>
+</html>
